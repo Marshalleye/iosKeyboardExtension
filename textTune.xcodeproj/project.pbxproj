@@ -14,6 +14,8 @@
 		ADA34B7B2BA9328300C1D015 /* textTuneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA34B7A2BA9328300C1D015 /* textTuneTests.swift */; };
 		ADA34B852BA9328300C1D015 /* textTuneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA34B842BA9328300C1D015 /* textTuneUITests.swift */; };
 		ADA34B872BA9328300C1D015 /* textTuneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA34B862BA9328300C1D015 /* textTuneUITestsLaunchTests.swift */; };
+		ADA34B9A2BA932FA00C1D015 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA34B992BA932FA00C1D015 /* KeyboardViewController.swift */; };
+		ADA34B9E2BA932FA00C1D015 /* tune-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ADA34B972BA932FA00C1D015 /* tune-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,28 @@
 			remoteGlobalIDString = ADA34B652BA9328100C1D015;
 			remoteInfo = textTune;
 		};
+		ADA34B9C2BA932FA00C1D015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA34B5E2BA9328100C1D015 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA34B962BA932FA00C1D015;
+			remoteInfo = "tune-extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADA34BA22BA932FA00C1D015 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ADA34B9E2BA932FA00C1D015 /* tune-extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ADA34B662BA9328100C1D015 /* textTune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = textTune.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +67,9 @@
 		ADA34B802BA9328300C1D015 /* textTuneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textTuneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA34B842BA9328300C1D015 /* textTuneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textTuneUITests.swift; sourceTree = "<group>"; };
 		ADA34B862BA9328300C1D015 /* textTuneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textTuneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ADA34B972BA932FA00C1D015 /* tune-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "tune-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA34B992BA932FA00C1D015 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		ADA34B9B2BA932FA00C1D015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +94,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADA34B942BA932FA00C1D015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +110,7 @@
 				ADA34B682BA9328100C1D015 /* textTune */,
 				ADA34B792BA9328300C1D015 /* textTuneTests */,
 				ADA34B832BA9328300C1D015 /* textTuneUITests */,
+				ADA34B982BA932FA00C1D015 /* tune-extension */,
 				ADA34B672BA9328100C1D015 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +121,7 @@
 				ADA34B662BA9328100C1D015 /* textTune.app */,
 				ADA34B762BA9328300C1D015 /* textTuneTests.xctest */,
 				ADA34B802BA9328300C1D015 /* textTuneUITests.xctest */,
+				ADA34B972BA932FA00C1D015 /* tune-extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +162,15 @@
 			path = textTuneUITests;
 			sourceTree = "<group>";
 		};
+		ADA34B982BA932FA00C1D015 /* tune-extension */ = {
+			isa = PBXGroup;
+			children = (
+				ADA34B992BA932FA00C1D015 /* KeyboardViewController.swift */,
+				ADA34B9B2BA932FA00C1D015 /* Info.plist */,
+			);
+			path = "tune-extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +181,12 @@
 				ADA34B622BA9328100C1D015 /* Sources */,
 				ADA34B632BA9328100C1D015 /* Frameworks */,
 				ADA34B642BA9328100C1D015 /* Resources */,
+				ADA34BA22BA932FA00C1D015 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ADA34B9D2BA932FA00C1D015 /* PBXTargetDependency */,
 			);
 			name = textTune;
 			productName = textTune;
@@ -183,6 +229,23 @@
 			productReference = ADA34B802BA9328300C1D015 /* textTuneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		ADA34B962BA932FA00C1D015 /* tune-extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA34B9F2BA932FA00C1D015 /* Build configuration list for PBXNativeTarget "tune-extension" */;
+			buildPhases = (
+				ADA34B932BA932FA00C1D015 /* Sources */,
+				ADA34B942BA932FA00C1D015 /* Frameworks */,
+				ADA34B952BA932FA00C1D015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tune-extension";
+			productName = "tune-extension";
+			productReference = ADA34B972BA932FA00C1D015 /* tune-extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +267,9 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = ADA34B652BA9328100C1D015;
 					};
+					ADA34B962BA932FA00C1D015 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = ADA34B612BA9328100C1D015 /* Build configuration list for PBXProject "textTune" */;
@@ -222,6 +288,7 @@
 				ADA34B652BA9328100C1D015 /* textTune */,
 				ADA34B752BA9328300C1D015 /* textTuneTests */,
 				ADA34B7F2BA9328300C1D015 /* textTuneUITests */,
+				ADA34B962BA932FA00C1D015 /* tune-extension */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +311,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ADA34B7E2BA9328300C1D015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA34B952BA932FA00C1D015 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -279,6 +353,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADA34B932BA932FA00C1D015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA34B9A2BA932FA00C1D015 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +373,11 @@
 			isa = PBXTargetDependency;
 			target = ADA34B652BA9328100C1D015 /* textTune */;
 			targetProxy = ADA34B812BA9328300C1D015 /* PBXContainerItemProxy */;
+		};
+		ADA34B9D2BA932FA00C1D015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA34B962BA932FA00C1D015 /* tune-extension */;
+			targetProxy = ADA34B9C2BA932FA00C1D015 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,6 +504,7 @@
 		ADA34B8B2BA9328300C1D015 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +534,7 @@
 		ADA34B8C2BA9328300C1D015 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +637,56 @@
 			};
 			name = Release;
 		};
+		ADA34BA02BA932FA00C1D015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SH5P99KVLZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tune-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "tune-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "naka.textTune.tune-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADA34BA12BA932FA00C1D015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SH5P99KVLZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "tune-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "tune-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "naka.textTune.tune-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,6 +722,15 @@
 			buildConfigurations = (
 				ADA34B912BA9328300C1D015 /* Debug */,
 				ADA34B922BA9328300C1D015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA34B9F2BA932FA00C1D015 /* Build configuration list for PBXNativeTarget "tune-extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA34BA02BA932FA00C1D015 /* Debug */,
+				ADA34BA12BA932FA00C1D015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
